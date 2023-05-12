@@ -81,7 +81,7 @@ class GUI:
                 with open('Files/' + file_name) as file:
                     break
             except Exception:
-                self.label_text.config(text='File does not exist please try again')
+                self.label_text.config(text='File does not exist \n please try again')
                 self.entry_input.delete(0, END)
                 break
         return 'Files/' + file_name
@@ -98,8 +98,7 @@ class GUI:
             while response != 1 and response != 2:
                 self.label_status.config = Label(text='TRY AGAIN')
             if response == 1:
-                self.label_status.config = Label(text='TRY AGAIN')
-                self.entry_output.delete(0, END)
+                return 'Files/' + file_name
 
             if response == 2:
                 return 'Files/' + file_name
