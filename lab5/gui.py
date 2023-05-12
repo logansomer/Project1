@@ -98,7 +98,9 @@ class GUI:
             while response != 1 and response != 2:
                 self.label_status.config = Label(text='TRY AGAIN')
             if response == 1:
-                self.entry_output == ''
+                self.label_status.config = Label(text='TRY AGAIN')
+                self.entry_output.delete(0, END)
+
             if response == 2:
                 return 'Files/' + file_name
         return 'Files/' + file_name
