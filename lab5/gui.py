@@ -86,7 +86,7 @@ class GUI:
                 break
         return 'Files/' + file_name
 
-    def output_fun(self, file_name: str, response: int) -> str:
+    def output_fun(self) -> str:
         """
         :param file_name: used to check for file based of user input
         :param response: numeric value 0, 1 ,or 2
@@ -102,7 +102,7 @@ class GUI:
             if response == 2:
                 return 'Files/' + file_name
         return 'Files/' + file_name
-    def main1(self, input_file: str, output_file: str)-> None:
+    def main1(self)-> None:
         """
         :param input_file: calls input_fun funtion
         :param output_file: calls output_fun funtion
